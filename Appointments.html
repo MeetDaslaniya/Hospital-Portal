@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Hospital Management</title>
+</head>
+
+<body>
+
+    <div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2" style="background-color: #FFFFFF; height: 100vh; padding: 0; margin: 0;">
+                    <div class="d-flex align-items-center mt-4" style="margin-left: 30px;">
+                        <img src="./image/g32.svg">
+                        <h5 class="fw-bold ps-2 pt-2" style="color: #3497F9; letter-spacing: 2px; font-family: Sarala;">
+                            <div>
+                                JHC Clinic
+                            </div>
+                        </h5>
+                    </div>
+                    <ul class="list-sidebar mt-4 ps-0">
+                        <li id="Dashboard">
+                            <a href="./Dashboard.html" onclick="sidebaractive('Dashboard')">
+                                <img src="./image/Path 7348.svg">
+                                <div style="padding-left: 12px;">
+                                    Dashboard
+                                </div>
+                            </a>
+                        </li>
+                        <li id="Patients">
+                            <a href="./Patient.html" onclick="sidebaractive('Patients')">
+                                <img src="./image/baseline-supervisor_account-24px.svg">
+                                <div style="padding-left: 11px;">
+                                    Patients
+                                </div>
+                            </a>
+                        </li>
+                        <li class="active" id="Appointments">
+                            <a href="./Appointments.html" onclick="sidebaractive('Appointments')">
+                                <img src="./image/file (233).svg">
+                                <div style="padding-left: 20px;">
+                                    Appointments
+                                </div>
+                            </a>
+                        </li>
+                        <li id="Doctors">
+                            <a href="./Doctors.html" onclick="sidebaractive('Doctors')">
+                                <img src="./image/Path 7356.svg">
+                                <div style="padding-left: 17px;">
+                                    Doctors
+                                </div>
+                            </a>
+                        </li>
+                        <li id="Messages">
+                            <a href="./Messages.html" onclick="sidebaractive('Messages')">
+                                <img src="./image/ChatDots.svg">
+                                <div style="padding-left: 15px;">
+                                    Messages
+                                </div>
+                            </a>
+                        </li>
+                        <li id="Education Content">
+                            <a href="./Education.html" onclick="sidebaractive('Education Content')">
+                                <img src="./image/Layer 2.svg">
+                                <div class="elps-overflow">
+                                    Education Content
+                                </div>
+                            </a>
+                        </li>
+                        <li id="Medicine Inventory">
+                            <a href="./Inventory.html" onclick="sidebaractive('Medicine Inventory')">
+                                <img src="./image/ArchiveBox.svg">
+                                <div class="elps-overflow">
+                                    Medicine Inventory
+                                </div>
+                            </a>
+                        </li>
+                        <li id="Settings">
+                            <a href="./Settings.html" onclick="sidebaractive('Settings')">
+                                <img src="./image/Layer 215.svg">
+                                <div style="padding-left: 19px;">
+                                    Settings
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mt-5">
+                            <a href="./Logout.html" style="color: #363636;">
+                                <img src="./image/fi-br-sign-out.svg">
+                                <div style="padding-left: 15px;">
+                                    Logout
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col" style="background-color:#e5f2ff ;  padding: 0; margin: 0;">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="ms-5" style="margin-top: 30px; color: rgba(55, 72, 88, 1);">Appointments</h5>
+                        <div class="d-flex justify-content-between me-5" style="margin-top: 20px;">
+                            <div>
+                                <button class="btn">
+                                    <img src="./image/Group 158.svg">
+                                </button>
+                            </div>
+                            <div class="d-flex">
+                                <div>
+                                    <img src="./image/Group.svg" class="me-2">
+                                </div>
+                                <div>
+                                    <p
+                                        style="color: rgba(55, 72, 88, 1); margin-bottom: 0; padding-bottom: 0; font-weight: 500; font-size: 12px;">
+                                        Jonitha Cathrine</p>
+                                    <small style="color: rgba(128, 128, 128, 1); font-size: 12px;">Admin</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="width: 92.3%; background-color: #FFFFFF; margin-left: 50px; border-radius: 10px; box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.03);"
+                        class="mt-4 mb-4">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex" style="padding-top: 40px;">
+                                <h6 style="color: rgba(36, 34, 34, 1); font-size: 15px; font-weight: 500;" class="ms-5">
+                                    NEW APPOINTMENTS</h6>
+                                <h6 class="ms-4"><a href="CompletedAppoinment.html"
+                                        style=" font-size: 15px; font-weight: 500;text-decoration: none; color: rgba(128, 128, 128, 1);">COMPLETED
+                                        APPOINTMENTS</a></h6>
+                            </div>
+                            <div class="d-flrx me-5">
+                                <button class="btn"
+                                    style="border-radius: 10px; background-color: rgba(52, 151, 249, 1); color: rgba(255, 255, 255, 1); margin-top: 25px; font-size: 12px; font-weight: 400;">
+                                    <img src="./image/fi-sr-plus-small.svg">New Appointment
+                                </button>
+                                <img src="./image/maximize.svg" style="padding-top: 25px; margin-left: 70px;">
+                            </div>
+                        </div>
+                        <div style="width: 100%; height: 0.5px; background-color: rgba(207, 207, 207, 1);" class="mt-2">
+                            <div style="width: 150px; height: 2px; background-color: rgba(52, 151, 249, 1)"
+                                class="mt-2 ms-5"></div>
+                        </div>
+                        <div class="d-flex" style="font-size: 12px; color: rgba(150, 150, 150, 1);">
+                            <div class="d-flex mt-4 ms-5"
+                                style="border-radius: 20px; height: 32px; width: 200px; background-color: rgba(235, 245, 255, 1);">
+                                <img src="./image/search.svg" class="ms-2 me-3" style="width: 14px;">
+                                <input type="text" placeholder="Search"
+                                    style="border: none; background-color: rgba(235, 245, 255, 1); border-radius: 20px; width: 170px;">
+                            </div>
+                            <div class="d-flex mt-4 ms-5"
+                                style="border-radius: 12px; height: 32px; width: 175px; color: rgba(150, 150, 150, 1); border: 1px solid rgba(52, 151, 249, 1);">
+                                <input type="datetime" class="ms-3" placeholder="Filter by Date"
+                                    style="border: none;  border-radius: 12px; width: 130px;">
+                                <img src="./image/datepicker.svg" class="me-3" style="width: 14px;">
+                            </div>
+                        </div>
+                        <table style="border-collapse: collapse; width: 90%;" class="ms-5 mt-3">
+                            <thead>
+                                <tr>
+                                    <th
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;font-weight: 500;font-size: 12px; color: #242222; padding-right: 40px;">
+                                        Time <img src="./image/sortsymb.svg">
+                                    </th>
+                                    <th
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;font-weight: 500;font-size: 12px; color: #242222;  padding-right: 50px;">
+                                        Date <img src="./image/sortsymb.svg">
+                                    </th>
+                                    <th
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left;width: 200px; padding: 8px;font-weight: 500;font-size: 12px; color: #242222; padding-left: 20px; ">
+                                        Patient Name <img src="./image/sortsymb.svg"></th>
+                                    <th
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;font-weight: 500;font-size: 12px; color: #242222; padding-right: 20px;">
+                                        Patient Age <img src="./image/sortsymb.svg"></th>
+                                    <th
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;font-weight: 500;font-size: 12px; color: #242222; padding-right: 30px;">
+                                        Doctor
+                                        <img src="./image/sortsymb.svg">
+                                    </th>
+                                    <th
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;font-weight: 500;font-size: 12px; color: #242222;">
+                                        User
+                                        Action <img src="./image/sortsymb.svg"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="font-weight: 400; font-size: 12px; color: #595959;">
+                                    <td style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;">
+                                        9:30AM
+                                    </td>
+                                    <td style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;">
+                                        05/12/2022</td>
+                                    <td
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px; padding-left: 20px; ">
+                                        <img src="./image/p1.svg" alt="Patient"
+                                            style="height: 32px; width: 32px; margin-right: 20px;">Elizabeth Polson</td>
+                                    <td
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px; padding-left: 37px;">
+                                        32
+                                    </td>
+                                    <td style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;">
+                                        Dr. John</td>
+                                    <td
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px; color: #3497F9; font-weight: 500;">
+                                        Reschedule <button>
+                                            <img src="./image/cancelkaro.svg" alt="Reschedule"
+                                                style="height: 24px; width: 24px; margin-left: 20px;">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr style="font-weight: 400; font-size: 12px; color: #595959;">
+                                    <td style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;">
+                                        10:30AM
+                                    </td>
+                                    <td style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;">
+                                        05/12/2022</td>
+                                    <td
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px; padding-left: 20px; ">
+                                        <img src="./image/p2.svg" alt="Patient"
+                                            style="height: 32px; width: 32px; margin-right: 20px;">John David</td>
+                                    <td
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px; padding-left: 37px;">
+                                        28
+                                    </td>
+                                    <td style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;">
+                                        Dr. Joel</td>
+                                    <td
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px; color: #3497F9; font-weight: 500;">
+                                        Reschedule <button>
+                                            <img src="./image/cancelkaro.svg" alt="Reschedule"
+                                                style="height: 24px; width: 24px; margin-left: 20px;">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr style="font-weight: 400; font-size: 12px; color: #595959;">
+                                    <td style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;">
+                                        11:00AM
+                                    </td>
+                                    <td style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;">
+                                        05/12/2022</td>
+                                    <td
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px; padding-left: 20px; ">
+                                        <img src="./image/p3.svg" alt="Patient"
+                                            style="height: 32px; width: 32px; margin-right: 20px;">Krishtav Rajan</td>
+                                    <td
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px; padding-left: 37px;">
+                                        24
+                                    </td>
+                                    <td style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;">
+                                        Dr. Joel</td>
+                                    <td
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px; color: #3497F9; font-weight: 500;">
+                                        Reschedule <button>
+                                            <img src="./image/cancelkaro.svg" alt="Reschedule"
+                                                style="height: 24px; width: 24px; margin-left: 20px;">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr style="font-weight: 400; font-size: 12px; color: #595959;">
+                                    <td style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;">
+                                        11:30AM
+                                    </td>
+                                    <td style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;">
+                                        05/12/2022</td>
+                                    <td
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px; padding-left: 20px; ">
+                                        <img src="./image/p4.svg" alt="Patient"
+                                            style="height: 32px; width: 32px; margin-right: 20px;">Sumanth Tinson</td>
+                                    <td
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px; padding-left: 37px;">
+                                        26
+                                    </td>
+                                    <td style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;">
+                                        Dr. John</td>
+                                    <td
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px; color: #3497F9; font-weight: 500;">
+                                        Reschedule <button>
+                                            <img src="./image/cancelkaro.svg" alt="Reschedule"
+                                                style="height: 24px; width: 24px; margin-left: 20px;">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr style="font-weight: 400; font-size: 12px; color: #595959;">
+                                    <td style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;">
+                                        11:00AM
+                                    </td>
+                                    <td style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;">
+                                        05/12/2022</td>
+                                    <td
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px; padding-left: 20px; ">
+                                        <img src="./image/p5.svg" alt="Patient"
+                                            style="height: 32px; width: 32px; margin-right: 20px;">EG Subramani</td>
+                                    <td
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px; padding-left: 37px;">
+                                        77
+                                    </td>
+                                    <td style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;">
+                                        Dr. John</td>
+                                    <td
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px; color: #3497F9; font-weight: 500;">
+                                        Reschedule <button>
+                                            <img src="./image/cancelkaro.svg" alt="Reschedule"
+                                                style="height: 24px; width: 24px; margin-left: 20px;">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr style="font-weight: 400; font-size: 12px; color: #595959;">
+                                    <td style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;">
+                                        11:00AM
+                                    </td>
+                                    <td style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;">
+                                        05/12/2022</td>
+                                    <td
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px; padding-left: 20px; ">
+                                        <img src="./image/p6.svg" alt="Patient"
+                                            style="height: 32px; width: 32px; margin-right: 20px;">Ranjan Maari</td>
+                                    <td
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px; padding-left: 37px;">
+                                        77
+                                    </td>
+                                    <td style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;">
+                                        Dr. John</td>
+                                    <td
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px; color: #3497F9; font-weight: 500;">
+                                        Reschedule <button>
+                                            <img src="./image/cancelkaro.svg" alt="Reschedule"
+                                                style="height: 24px; width: 24px; margin-left: 20px;">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr style="font-weight: 400; font-size: 12px; color: #595959;">
+                                    <td style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;">
+                                        11:00AM
+                                    </td>
+                                    <td style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;">
+                                        05/12/2022</td>
+                                    <td
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px; padding-left: 20px; ">
+                                        <img src="./image/p7.svg" alt="Patient"
+                                            style="height: 32px; width: 32px; margin-right: 20px;">Philipile Gopal</td>
+                                    <td
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px; padding-left: 37px;">
+                                        55
+                                    </td>
+                                    <td style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px;">
+                                        Dr. John</td>
+                                    <td
+                                        style="border-bottom: 0.5px solid #CFCFCF; text-align: left; padding: 8px; color: #3497F9; font-weight: 500;">
+                                        Reschedule
+                                        <button>
+                                            <img src="./image/cancelkaro.svg" alt="Reschedule"
+                                                style="height: 24px; width: 24px; margin-left: 20px;">
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="d-flex justify-content-end mt-3 pb-4">
+                            <small style="color: #C4C4C4;" class="me-4 mt-1">Previous</small>
+                            <img src="./image/1number.svg" class="me-4">
+                            <small style="color: #3497F9;" class="me-4 mt-1">2</small>
+                            <small style="color: #3497F9;" class="me-4 mt-1">3</small>
+                            <small style="color: #3497F9;" class="me-4 mt-1">4</small>
+                            <small style="color: #3497F9; margin-right: 150px;" class="mt-1">Next</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

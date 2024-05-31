@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Hospital Management</title>
+</head>
+
+<body>
+
+    <div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2" style="background-color: #FFFFFF; height: 100vh; padding: 0; margin: 0;">
+                    <div class="d-flex align-items-center mt-4" style="margin-left: 30px;">
+                        <img src="./image/g32.svg">
+                        <h5 class="fw-bold ps-2 pt-2" style="color: #3497F9; letter-spacing: 2px; font-family: Sarala;">
+                            <div>
+                                JHC Clinic
+                            </div>
+                        </h5>
+                    </div>
+                    <ul class="list-sidebar mt-4 ps-0">
+                        <li id="Dashboard">
+                            <a href="./Dashboard.html" onclick="sidebaractive('Dashboard')">
+                                <img src="./image/Path 7348.svg">
+                                <div style="padding-left: 12px;">
+                                    Dashboard
+                                </div>
+                            </a>
+                        </li>
+                        <li id="Patients">
+                            <a href="./Patient.html" onclick="sidebaractive('Patients')" >
+                                <img src="./image/baseline-supervisor_account-24px.svg">
+                                <div style="padding-left: 11px;">
+                                    Patients
+                                </div>
+                            </a>
+                        </li>
+                        <li id="Appointments">
+                            <a href="./Appointments.html" onclick="sidebaractive('Appointments')">
+                                <img src="./image/file (233).svg">
+                                <div style="padding-left: 20px;">
+                                    Appointments
+                                </div>
+                            </a>
+                        </li>
+                        <li id="Doctors">
+                            <a href="./Doctors.html" onclick="sidebaractive('Doctors')">
+                                <img src="./image/Path 7356.svg">
+                                <div style="padding-left: 17px;">
+                                    Doctors
+                                </div>
+                            </a>
+                        </li>
+                        <li id="Messages">
+                            <a href="./Messages.html" onclick="sidebaractive('Messages')">
+                                <img src="./image/ChatDots.svg">
+                                <div style="padding-left: 15px;">
+                                    Messages
+                                </div>
+                            </a>
+                        </li>
+                        <li id="Education Content">
+                            <a href="./Education.html" onclick="sidebaractive('Education Content')">
+                                <img src="./image/Layer 2.svg">
+                                <div style="padding-left: 18px;">
+                                    Education Content
+                                </div>
+                            </a>
+                        </li>
+                        <li id="Medicine Inventory">
+                            <a href="./Inventory.html" onclick="sidebaractive('Medicine Inventory')">
+                                <img src="./image/ArchiveBox.svg">
+                                <div style="padding-left: 15px;">
+                                    Medicine Inventory
+                                </div>
+                            </a>
+                        </li>
+                        <li class="active" id="Settings">
+                            <a href="./Settings.html" onclick="sidebaractive('Settings')">
+                                <img src="./image/Layer 215.svg">
+                                <div style="padding-left: 19px;">
+                                    Settings
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mt-5">
+                            <a href="./Logout.html" style="color: #363636;">
+                                <img src="./image/fi-br-sign-out.svg">
+                                <div style="padding-left: 15px;">
+                                    Logout
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col" style="background-color:#e5f2ff ; height: 100vh; padding: 0; margin: 0;">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="ms-5" style="margin-top: 30px; color: rgba(55, 72, 88, 1);">PageNotFound</h5>
+                        <div class="d-flex justify-content-between me-5" style="margin-top: 20px;">
+                            <div>
+                                <button class="btn">
+                                    <img src="./image/Group 158.svg">
+                                </button>
+                            </div>
+                            <div class="d-flex">
+                                <div>
+                                    <img src="./image/Group.svg" class="me-2">
+                                </div>
+                                <div>
+                                    <p
+                                        style="color: rgba(55, 72, 88, 1); margin-bottom: 0; padding-bottom: 0; font-weight: 500; font-size: 12px;">
+                                        Jonitha Cathrine</p>
+                                    <small style="color: rgba(128, 128, 128, 1); font-size: 12px;">Admin</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="width: 92.3%; height: 82%; background-color: #FFFFFF; margin-left: 50px; border-radius: 10px; box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.03);"
+                        class="mt-4">
+                        <h1 style="color: #363636;" class="d-flex justify-content-between align-items-center">Oops! Page Not Found</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
